@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Survey Form</title>
+</head>
+<body>
+
+    <header>
+        <h2>Complete Survey Form</h2>
+    </header>
+
+    <main>
+        <section>
+            <form action="./submit.html" method="get">
+
+                <section>
+                    <h2>Personal Information</h2>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a strong password" required><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="10" max="100" placeholder="Enter your age" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number"><br><br>
+
+                    <label for="website">Your Website:</label>
+                    <input type="url" id="website" name="website" placeholder="Enter your website URL"><br><br>
+                </section>
+
+                <section>
+                    <h2>Skills & Performance</h2>
+                    <label for="performance">Performance Level in Programming (1-5):</label>
+                    <input type="range" id="performance" name="performance" min="1" max="5"><br><br>
+
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume"><br><br>
+
+                    <label>Languages Known:</label><br>
+                    <input type="checkbox" id="english" name="language" value="English">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="hindi" name="language" value="Hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="french" name="language" value="French">
+                    <label for="french">French</label><br><br>
+                </section>
+
+                <section>
+                    <h2>Preferences</h2>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label><br><br>
+
+                    <label for="country">Select Your Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Choose a country</option>
+                        <option value="USA">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="India">India</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select><br><br>
+
+                    <label for="time">Preferred Meeting Time for Interview:</label>
+                    <input type="time" id="time" name="time"><br><br>
+                </section>
+
+                <section>
+                    <h2>Feedback Section</h2>
+                    <label for="feedback">Your Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback..."></textarea><br><br>
+                </section>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; designed by Talluri Nageswara Rao 2025 Survey Form. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
